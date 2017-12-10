@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-<<<<<<< HEAD
-  "directories": {
-    "test": "test"
-  },
-=======
->>>>>>> f214f8616ddabf5134878e56b1f09ed49cfd88cf
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,14 +15,13 @@
   "bugs": {
     "url": "https://github.com/zachyutw/ParkingCalAppNodeMongo/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://github.com/zachyutw/ParkingCalAppNodeMongo#readme"
-=======
   "homepage": "https://github.com/zachyutw/ParkingCalAppNodeMongo#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "mocha": "^4.0.1",
     "mongoose": "^4.13.6",
-    "nodemon": "^1.12.5"
+    "nodemon": "^1.12.5",
+    "supertest": "^3.0.0"
   }
->>>>>>> f214f8616ddabf5134878e56b1f09ed49cfd88cf
 }
