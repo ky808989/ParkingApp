@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+
 const ContactSchema = new Schema({
     email:{
         type:String,
@@ -24,7 +25,8 @@ const UserSchema = new Schema({
         type:String,
         required:true
     },
-    contact_info: ContactSchema
+    contact_info: ContactSchema,
+    
 });
 
 const User = mongoose.model('user',UserSchema);

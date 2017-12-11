@@ -1,12 +1,12 @@
 const express = require('express');
-const routes = require('./src/routes');
+const routes = require('./src/routes/routes');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const app = express();
 
-export const mongodb = 'mongodb://localhost/parkplace';
-export const mongodb_test = 'mongodb://localhost/parkplace_test';
+const mongodb = 'mongodb://localhost/parkplace';
+const mongodb_test = 'mongodb://localhost/parkplace_test';
 //set up mongoose Promise
 mongoose.Promise = global.Promise;
 
@@ -23,4 +23,4 @@ mongoose.connection
 app.use(bodyParser.json());
 routes(app);
 
-module.exports = app;
+module.exports = {app,mongodb,mongodb_test};
