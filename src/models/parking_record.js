@@ -13,7 +13,8 @@ const PointSchema = new Schema({
 const ParkingRecordsSchema = new Schema({
     enter_time:{
         type:Date,
-        required:true
+        required:true,
+        default:Date.now
     },
     exit_time:{
         type:Date,
@@ -36,7 +37,9 @@ const ParkingRecordsSchema = new Schema({
         type:Date
     }
 
+},{
+    timestamps:true
 });
 
-const  ParkingRecord= mongoose.model('parking_record',ParkingRecordsSchema);
+const ParkingRecord= mongoose.model('parking_record',ParkingRecordsSchema);
 module.exports = ParkingRecord;

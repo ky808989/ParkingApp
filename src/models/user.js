@@ -1,8 +1,16 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const 
+const CarsSchema = new Schema({
+    plate_no:{
+        type:String,
+        required:true,
+    },
+    car_details:String,
+    parking_recs:[]
+});
 
-
-const ContactSchema = new Schema({
+const ContactsSchema = new Schema({
     email:{
         type:String,
         required:true
@@ -20,14 +28,26 @@ const ContactSchema = new Schema({
 });
 
 
-const UserSchema = new Schema({
+
+const UsersSchema = new Schema({
     user_name:{
         type:String,
         required:true
     },
-    contact_info: ContactSchema,
-    
+    contact_info: ContactsSchema,
+    password_hash:{
+        type:String,
+        default:'1234',
+        required: true,
+    },
+    cars_owned:[CarsSchema],
+    membership:{
+        type:String,
+        default:'regular'
+    },
+    pay_method:{},
+    parking_records:{}
 });
 
-const User = mongoose.model('user',UserSchema);
+const User = mongoose.model('user',UsersSchema);
 module.exports = User;
