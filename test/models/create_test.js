@@ -1,6 +1,7 @@
 const assert = require('assert');
 const User = require('../../src/models/user');
-const ParkingRecord = require('../../src/models/parking_record');
+const ParkingRecord = require('../../src/models/parkingRecord');
+const CreateParkingRecord = require('../../src/queries/CreateParkingRecord');
 
 describe('',(done)=> 'string');
 (done) => {
@@ -11,7 +12,7 @@ describe('Creating records', () => {
     //done would control the waiting time.
 
     let york;
-    let 
+    
     
     beforeEach((done) => {
         york = new User({user_name: 'York',postCount:0});

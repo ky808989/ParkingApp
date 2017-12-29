@@ -41,5 +41,5 @@ const ParkingRecordsSchema = new Schema({
     timestamps:true
 });
 
-const ParkingRecord= mongoose.model('parking_record',ParkingRecordsSchema);
+const ParkingRecord= mongoose.model('parkingRecord',ParkingRecordsSchema);
 module.exports = ParkingRecord;
