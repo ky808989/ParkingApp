@@ -1,4 +1,6 @@
 # ParkingCalAppNodeMongo
+This App will use the license plate to record the parking time and calculate the parking fee
+
 ## Trello
 (https://trello.com/b/ySVfqxVT/parkinglot-nodejs-restful-app "App Trello Board")
 

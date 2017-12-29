@@ -1,6 +1,7 @@
 const assert = require('assert');
 const User = require('../../src/models/user');
-const ParkingRecord = require('../../src/models/parking_record');
+const ParkingRecord = require('../../src/models/parkingRecord');
+const CreateParkingRecord = require('../../src/queries/CreateParkingRecord');
 
 describe('',(done)=> 'string');
 (done) => {
