@@ -29,19 +29,19 @@ const ContactsSchema = new Schema({
 
 
 const UsersSchema = new Schema({
-    googleId:String,
-    
+    googleId:String,    
     user_name:{
         type:String,
-    
     },
-    
+    photo: {
+        type:String,
+        default: 'http://thehumorous.com/wp-content/uploads/2013/11/Did-you-eat-the-kitty-cats-treats-Denver-50x50.gif'
+     },
     password_hash:{
         type:String,
         default:'1234',
         required: true,
     },
-    
     contact_info: ContactsSchema,
     cars_owned:[CarsSchema],
     membership:{

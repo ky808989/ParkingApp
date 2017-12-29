@@ -43,4 +43,29 @@ npm install --save mocha nodemon supertest
 ```
 npm run test
 ```
+# Debug
+Example
+```
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! client@0.1.0 build: `react-scripts build`
+npm ERR! Exit status 1
+npm ERR!
+...
+```
+Try to delete whole node_modules directory and package-lock.json file, then run 'npm install' command 
 
+## Materilize CSS
+add js in the ./public/index.html
+``` html
+<body>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+...
+```
+link icons in ./public/index.html
+``` html
+<head>
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ </head>
+```

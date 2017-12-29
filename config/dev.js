@@ -8,7 +8,7 @@ module.exports = {
     mongoURI: 'mongodb://sa:!234qwer@ds135547.mlab.com:35547/parkingcal-dev',
     cookieKey:'tagvwagewageawegaweg232gevasgeaw323',
     }
-
+   
     /** Product keys
      * 
      *  googleClientID :936650414627-739fv20abj5ad99v89s8msmvpb0h7h34.apps.googleusercontent.com

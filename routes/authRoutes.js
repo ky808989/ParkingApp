@@ -9,8 +9,8 @@ app.get('/auth/google',
 app.get('/auth/google/callback',
     passport.authenticate('google'),
     (req, res) => {
-        res.send(req.user);
-        //res.redirect('/surveys');
+        //res.send(req.user);
+        res.redirect('/surveys');
     }
 );
 
@@ -19,8 +19,8 @@ app.get('/api/current_user',(req,res)=>{
 });
 app.get('/api/logout',(req,res)=>{
     req.logout();
-    res.send(req.user);
-    //res.redirect('/');
+    //res.send(req.user);
+    res.redirect('/');
 
 });
 };
