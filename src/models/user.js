@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const 
 const CarsSchema = new Schema({
     plate_no:{
         type:String,
@@ -30,16 +29,20 @@ const ContactsSchema = new Schema({
 
 
 const UsersSchema = new Schema({
+    googleId:String,
+    
     user_name:{
         type:String,
-        required:true
+    
     },
-    contact_info: ContactsSchema,
+    
     password_hash:{
         type:String,
         default:'1234',
         required: true,
     },
+    
+    contact_info: ContactsSchema,
     cars_owned:[CarsSchema],
     membership:{
         type:String,

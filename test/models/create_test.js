@@ -12,7 +12,7 @@ describe('Creating records', () => {
     //done would control the waiting time.
 
     let york;
-    let 
+    
     
     beforeEach((done) => {
         york = new User({user_name: 'York',postCount:0});

@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise; //use ES6 respertention
-const mongodb_test = require('../app').mongodb_test;
+const keys = require('../config/keys');
 
 
 //connect to test database
 before(() => {
-    mongoose.connect(mongodb_test);
+    mongoose.connect(keys.mongoURI);
     mongoose.connection
     .once('open', () => {})
     .on('error',(error) => { console.warn('Warning',error);
